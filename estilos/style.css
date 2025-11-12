@@ -6,8 +6,17 @@
 
 }
 
+:root{
+    --cor1:#55608B;
+    --cor2:#7B5E99;
+    --cor3:#DED43B;
+    --cor4:#7E7E7E;
+    --cor5:#000000;
+}
+
+
 body{
-    background-color: darkgray;
+    background-color: linear-gradient(to bottom, var(--cor1), var(--cor5));
 }
 
 header{
