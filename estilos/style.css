@@ -1,43 +1,83 @@
 @charset "UTF-8";
 
-*{
-    margin: 0;
-    padding: 0;
+@import url('https://fonts.googleapis.com/css2?family=Delius&family=Shadows+Into+Light&display=swap');
 
-}
+@import url('https://fonts.googleapis.com/css2?family=Delius&family=Shadows+Into+Light&family=Titan+One&display=swap');
+
 
 :root{
     --cor1:#55608B;
     --cor2:#7B5E99;
     --cor3:#DED43B;
     --cor4:#7E7E7E;
-    --cor5:#000000;
+    --cor5:#333953;
+    --cor6:#000000;
+
+    --fonte-padrao: arial, verdana, helvetica, sans-serif;
+    --fonte-titulo: 'Delius', cursive;
+    --fonte-conteudo: 'Shadows Into Light', cursive;
 }
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
 
 
 body{
-    background-color: linear-gradient(to bottom, var(--cor1), var(--cor5));
+    background-color: darkgray;
+    background-image: url(../imagens/wallpaper.jpg);
+    background-size: cover;
 }
 
 header{
-    background-color: black;
+    background-image: linear-gradient(to bottom, var(--cor5) 5%, var(--cor6));
     color: white;
     padding: 20px;
     text-align: center;
-    height: 100px;
+    height: 200px;
 }
 
-header h1{
-    margin-top: 20px;
-    margin-bottom: 10px;    
+header > h1{
+    padding-top: 50px;
+    font-family: var(--fonte-titulo);
+    font-variant: small-caps;
+    font-size: 8vw;    
+}
+
+header > p{
+    font-family: var(--fonte-conteudo);
+    font-size: 1.2em;
+    padding-bottom: 50px;
+    
+    
 }
 
 main{
     background-color: white;
-    max-width: 500px;
+    max-width: 600px;
     padding: 20px;
-    min-height: 500px;
+    padding-top: 15vh;
     margin: auto;
+}
+
+main h2{
+    font-family: var(--fonte-titulo);
+    padding-bottom: 30px;
+    color: var(--cor5);
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.514);
+}
+main p{
+    font-family: var(--fonte-conteudo);
+    font-size: 25px;
+    margin-bottom: 15px;
+    line-height: 2em;
+    text-align: justify;
+    text-indent: 25px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.349);
 }
 
 footer{
