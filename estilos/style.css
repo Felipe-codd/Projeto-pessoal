@@ -4,6 +4,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Delius&family=Shadows+Into+Light&family=Titan+One&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Delius&family=Gloria+Hallelujah&family=Shadows+Into+Light&family=Titan+One&display=swap');
+
 
 :root{
     --cor1:#55608B;
@@ -15,7 +17,8 @@
 
     --fonte-padrao: arial, verdana, helvetica, sans-serif;
     --fonte-titulo: 'Delius', cursive;
-    --fonte-conteudo: 'Shadows Into Light', cursive;
+    --fonte-conteudo: 'Gloria Hallelujah', cursive;
+    --fonte-extra: 'Shadows Into Light', cursive;
 }
 
 *{
@@ -28,7 +31,7 @@
 
 body{
     background-color: darkgray;
-    background-image: url(../imagens/wallpaper.jpg);
+    background-image: url(../imagens-home/wallpaper.jpg);
     background-size: cover;
 }
 
@@ -37,14 +40,15 @@ header{
     color: white;
     padding: 20px;
     text-align: center;
-    height: 200px;
+    height: 250px;
 }
 
 header > h1{
     padding-top: 50px;
+    padding-bottom: 20px;
     font-family: var(--fonte-titulo);
-    font-variant: small-caps;
-    font-size: 8vw;    
+    font-size: 3em;
+      
 }
 
 header > p{
@@ -59,7 +63,7 @@ main{
     background-color: white;
     max-width: 600px;
     padding: 20px;
-    padding-top: 15vh;
+    padding-top: 10vh;
     margin: auto;
 }
 
@@ -85,22 +89,44 @@ main h3{
 }
 main p{
     font-family: var(--fonte-conteudo);
-    font-size: 25px;
-    margin-bottom: 15px;
+    font-size: 25px;    
+    padding-bottom: 50px;
     line-height: 2em;
     text-align: justify;
     text-indent: 25px;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.349);
+    font-weight: normal;
 }
 
 main div.nekronyx{
-    width: 97vw;
-    height: 97vh;
-    background-image: url(../imagens/Nekronyx-main-g2.png);
+    margin: auto;
+    max-width: 90vw;
+    height: 60vh;
+    background-image: url(../imagens-home/Nekronyx-main-g2.png);
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center;
+    
+}
+
+main picture img{
+    max-width: 100%;
+    display: block;
+    margin: auto;
+
+    
+}
+
+main div.dragon{
+    margin: auto;
+    max-width: 100vw;
+    height: 70vh;
+    background-image: url(../imagens-home/Dragon-Riders-main.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
     background-attachment: fixed;
+
 }
     
 aside{
@@ -108,7 +134,7 @@ aside{
     padding: 10px;
     color: white;
     background-color: var(--cor2);
-    font-family: var(--fonte-conteudo);
+    font-family: var(--fonte-extra);
     font-size: 20px;
     text-align: center;
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.349);
